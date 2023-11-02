@@ -1,7 +1,106 @@
-:root{
-    --primaria:#3e4095;
-    --secundaria:#00Afee;
-    --laranja:#f58634;
-    --texto:#4b4b4b;
-    --label-categoria:#d9c505;
+:root {
+    --primaria: #3e4095;
+    --secundario: #00Afee;
+    --laranja: #f58634;
+    --texto: #4b4b4b;
+    --label-categoria: #d9c505;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+#cabecalho{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#menu ul{
+   display: flex;
+   list-style: none;
+}
+
+#menu ul li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#menu a{
+    color: var(--texto);
+    font-weight: 500;
+}
+
+.btn-secundario{
+    background-color: var(--secundario);
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#banner{
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#banner p {
+    margin: 10px;
+
+}
+
+#formpesquisa{
+    background-color: #ffffff;
+    color: var(--texto);
+    font-size: 1.5em;
+    border-radius: 30px;
+}
+
+#formpesquisa form{
+    display: flex;
+    align-items: center;
+
+}
+
+#formpesquisa form input{
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+}
+
+#formpesquisa form i {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+#formpesquisa form button{
+    background-color: var(--primaria);
+    border: none;
+    border-radius: 30px;
+    color:#ffffff;
+    font-size: 1rem ;
+    padding: 9px 30px;
+    margin-right: 3px;
+
+
 }
